@@ -74,27 +74,44 @@ header .navbar {
   line-height: 139%;
 }
 
-.hero-info p {
-  line-height: 170%;
-  width: 80%;
-}
-
 .hero-info a {
-  display: inline-block;
   margin: 1rem 0;
+}
+/***************
+about  
+***************/
+.about .grid {
+  grid-column-gap: 2.5rem;
+}
+
+.about-details h1 {
+  margin-bottom: 2rem;
+}
+/***************
+contagion
+***************/
+.cards-container {
+  grid-gap: 2.5rem;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  height: 100%;
   transition: var(--transition);
+  border-bottom: 5px solid #ffffff;
+  cursor: pointer;
 }
 
-.hero-info a:hover {
-  transform: scale(0.9);
+.card:hover {
+  border-bottom: 5px solid var(--brand-primary-color);
 }
-/***************
-root styles  
-***************/
 
-/***************
-root styles  
-***************/
+.card img {
+  width: 205px;
+  height: 205px;
+}
 
 /***************
 root styles  
