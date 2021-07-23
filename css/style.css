@@ -70,10 +70,6 @@ header .navbar {
 }
 
 /* hero */
-.hero-info h1 {
-  line-height: 139%;
-}
-
 .hero-info a {
   margin: 1rem 0;
 }
@@ -112,7 +108,50 @@ contagion
   width: 205px;
   height: 205px;
 }
+/***************
+symptoms  
+***************/
+.symptoms .container img {
+  width: 64%;
+}
+/***************
+ awareness
+***************/
+.article-container article .grid {
+  grid-template-columns: 1fr 4fr;
+}
 
+.article-container article:nth-of-type(even) img {
+  order: 1;
+  justify-self: flex-start;
+}
+
+.article-container article:nth-of-type(even) .article-instruction {
+  order: 2;
+}
+
+.article-container article .article-number {
+  font-family: "Red Hat Display", sans-serif;
+  align-self: flex-start;
+  justify-self: flex-end;
+  margin-right: 1.25rem;
+  font-size: 1.75rem;
+  padding: 0.75rem 0.875rem;
+  background: var(--light-color);
+  border-radius: 50%;
+  color: var(--brand-secondary-color);
+  font-weight: bold;
+}
+
+article .article-info h3 {
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1.9px;
+}
+
+.article-container img {
+  justify-self: flex-end;
+  width: 400px;
+}
 /***************
 root styles  
 ***************/

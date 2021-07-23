@@ -6,11 +6,6 @@ body {
   background: #ffffff;
 }
 
-section,
-footer {
-  padding: 2rem 0;
-}
-
 h1,
 h2,
 h3,
@@ -49,9 +44,10 @@ common
   margin: 0 auto;
 }
 
-/***************
-background
-***************/
+section,
+footer {
+  padding: 4rem 0;
+}
 
 /***************
 grid 
@@ -120,7 +116,7 @@ text
 }
 
 .md-head {
-  font-size: 2.25rem;
+  font-size: 2rem;
 }
 
 .sm-head {
