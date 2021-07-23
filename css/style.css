@@ -26,6 +26,8 @@ header {
 header .navbar {
   justify-content: space-between;
   padding-top: 2rem;
+  position: relative;
+  animation: MoveFromTopSide 0.4s ease-in;
 }
 
 .nav-logo img {
@@ -70,9 +72,25 @@ header .navbar {
 }
 
 /* hero */
+.hero-info {
+  position: relative;
+  animation: MoveFromLeftSide 0.4s ease-in;
+}
+
+.hero-img {
+  position: relative;
+  animation: MoveFromRightSide 0.4s ease-in;
+}
+
+.hero-img img {
+  position: relative;
+  animation: Move 4s ease-in 0.4s infinite;
+}
+
 .hero-info a {
   margin: 1rem 0;
 }
+
 /***************
 about  
 ***************/
@@ -153,5 +171,63 @@ article .article-info h3 {
   width: 400px;
 }
 /***************
-root styles  
+subscribe  
+***************/
+.input-group {
+  justify-content: space-between;
+  background: #ffffff;
+  border-radius: 2.8rem;
+  box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.06);
+}
+
+.input-group input {
+  border: none;
+  background: transparent;
+  margin-left: 2.5rem;
+  color: #758681;
+  font-size: 1.25rem;
+}
+
+.input-group input:focus {
+  outline: 0;
+}
+
+.input-group button {
+  border: none;
+  cursor: pointer;
+  padding: 1rem 3rem;
+  margin-right: 1rem;
+}
+/***************
+footer
+***************/
+footer .flex {
+  justify-content: space-between;
+}
+
+.social a i {
+  transition: var(--transition);
+}
+
+.social a:hover i {
+  transform: scale(1.9);
+}
+
+.social i {
+  margin-right: 1rem;
+}
+
+.social .fa-youtube {
+  color: #f44a45;
+}
+
+.social .fa-facebook {
+  color: #4267b2;
+}
+
+.social .fa-twitter {
+  color: #1da1f2;
+}
+/***************
+media query
 ***************/

@@ -3,7 +3,11 @@ universal
 ***************/
 body {
   font-family: "Lato", sans-serif;
-  background: #ffffff;
+  background: linear-gradient(
+    360deg,
+    rgba(255, 241, 241, 0.5) 0%,
+    rgba(255, 241, 241, 0) 108.69%
+  );
 }
 
 h1,
@@ -44,8 +48,7 @@ common
   margin: 0 auto;
 }
 
-section,
-footer {
+section {
   padding: 4rem 0;
 }
 
@@ -260,17 +263,64 @@ line-height
 }
 
 /***************
-root styles  
+animation
 ***************/
+@keyframes MoveFromLeftSide {
+  0% {
+    transform: translateX(-100%);
+  }
 
-/***************
-root styles  
-***************/
+  100% {
+    transform: translateX(0);
+  }
+}
 
-/***************
-root styles  
-***************/
+@keyframes MoveFromRightSide {
+  0% {
+    transform: translateX(100%);
+  }
 
-/***************
-root styles  
-***************/
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes MoveFromTopSide {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes MoveFromBottomSide {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes Move {
+  0% {
+    transform: translateY(0.5%);
+  }
+
+  25% {
+    transform: translateX(0.5%) scale(0.995);
+  }
+
+  50% {
+    transform: translateY(-0.5%);
+  }
+
+  75% {
+    transform: translateX(-0.5%) scale(1.008);
+  }
+
+  100% {
+    transform: translateY(0.5%);
+  }
+}
