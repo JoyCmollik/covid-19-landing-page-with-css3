@@ -30,6 +30,10 @@ header .navbar {
   animation: MoveFromTopSide 0.4s ease-in;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 .nav-logo img {
   width: 70%;
 }
@@ -231,3 +235,225 @@ footer .flex {
 /***************
 media query
 ***************/
+/* mobile */
+@media screen and (max-width: 689px) {
+  /* universal */
+  .section-title p {
+    width: 80%;
+  }
+  /* grid */
+  header .hero,
+  .about .grid,
+  .contagion .container .grid,
+  .awareness .article-container .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+  /* header */
+  header {
+    height: auto;
+  }
+
+  /* nav */
+  .nav-links {
+    display: none;
+  }
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .mobile-nav a i {
+    position: relative;
+    animation: Scale 1.9s linear infinite;
+  }
+
+  /* hero */
+  .hero-info {
+    animation: MoveFromTopSide 0.4s ease-in;
+    text-align: center;
+    order: 2;
+  }
+
+  .hero-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-info p {
+    margin: 0 auto;
+  }
+
+  .hero-img {
+    animation: MoveFromBottomSide 0.4s ease-in;
+  }
+
+  /* about */
+  .about-details {
+    text-align: center;
+  }
+
+  /* contagion */
+  .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /* symptoms */
+  .symptoms .container img {
+    width: 100%;
+  }
+
+  /* awareness */
+  .article-container article:nth-of-type(n) img {
+    order: 2;
+    width: 80%;
+    justify-self: center;
+  }
+
+  .article-container article .article-instruction {
+    grid-template-columns: 1fr;
+  }
+
+  .article-container article .article-instruction .article-number,
+  .article-info {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .article-info p {
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* subscribe */
+  .subscribe .container h2 {
+    width: 91%;
+  }
+
+  .input-group {
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .input-group input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    background: white;
+    border-radius: 2.8rem;
+    box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.28);
+  }
+
+  .input-group button {
+    margin: 0;
+  }
+
+  /* footer */
+  footer .flex {
+    justify-content: space-evenly;
+  }
+}
+
+/* tab */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  /* universal */
+  .section-title p {
+    width: 70%;
+  }
+  /* grid */
+  header .container,
+  .awareness .article-container .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .about .grid,
+  .contagion .container .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+  /* header */
+  header {
+    height: auto;
+  }
+
+  /* nav */
+  .navbar {
+    padding: 1rem;
+  }
+
+  .mobile-nav {
+    display: none;
+  }
+
+  /* hero */
+  .hero-info {
+    animation: MoveFromTopSide 0.4s ease-in;
+    text-align: center;
+    order: 2;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .hero-info h2 {
+    font-size: 1.4rem;
+  }
+
+  .hero-info p {
+    margin: 0 auto;
+  }
+
+  .hero-img {
+    animation: MoveFromBottomSide 0.4s ease-in;
+  }
+
+  /* awareness */
+  .article-container article:nth-of-type(n) img {
+    order: 2;
+    width: 50%;
+    justify-self: center;
+  }
+
+  .article-container article .article-instruction {
+    grid-template-columns: 1fr;
+  }
+
+  .article-container article .article-instruction .article-number,
+  .article-info {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .article-info p {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1140px) {
+  .container {
+    width: 90%;
+  }
+
+  header {
+    height: auto;
+  }
+
+  /* grid */
+  .contagion .container .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
