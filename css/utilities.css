@@ -1,0 +1,231 @@
+/***************
+universal
+***************/
+body {
+  font-family: "Lato", sans-serif;
+  background: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Red Hat Display", sans-serif;
+  color: var(--primary-color);
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+p {
+  color: var(--secondary-color);
+  margin: 10px 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+img {
+  width: 100%;
+}
+
+/***************
+common
+***************/
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/***************
+background
+***************/
+
+/***************
+grid 
+***************/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+/***************
+flex 
+***************/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/***************
+button
+***************/
+.btn {
+  padding: 1rem 2rem;
+  margin: 10px 0;
+  text-transform: capitalize;
+  font-size: 1.125rem;
+  border-radius: 4rem;
+}
+
+.btn-primary {
+  background-color: var(--brand-primary-color);
+  color: #ffffff;
+}
+/***************
+text
+***************/
+.text-center {
+  text-align: center;
+}
+
+.text-alert {
+  color: var(--brand-primary-color);
+}
+
+.xl-head {
+  font-size: 3rem;
+}
+
+.lg-head {
+  font-size: 2.5rem;
+}
+
+.md-head {
+  font-size: 2rem;
+}
+
+.sm-head {
+  font-size: 1.75rem;
+}
+
+.lg-text {
+  font-size: 2rem;
+}
+
+.md-text {
+  font-size: 1.25rem;
+}
+
+.sm-text {
+  font-size: 1rem;
+}
+/***************
+margin
+***************/
+.mx-auto {
+  margin: 0 auto;
+}
+
+.mx-1 {
+  margin: 0 1rem;
+}
+.mx-2 {
+  margin: 0 1.5rem;
+}
+.mx-3 {
+  margin: 0 2rem;
+}
+.mx-4 {
+  margin: 0 3rem;
+}
+.mx-5 {
+  margin: 0 4rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 1.5rem 0;
+}
+.my-3 {
+  margin: 2rem 0;
+}
+.my-4 {
+  margin: 3rem 0;
+}
+.my-5 {
+  margin: 4rem 0;
+}
+/***************
+padding
+***************/
+.p-1 {
+  padding: 1rem;
+}
+.p-2 {
+  padding: 1.5rem;
+}
+.p-3 {
+  padding: 2rem;
+}
+.p-4 {
+  padding: 3rem;
+}
+.p-5 {
+  padding: 4rem;
+}
+
+.px-1 {
+  padding: 0 1rem;
+}
+.px-2 {
+  padding: 0 1.5rem;
+}
+.px-3 {
+  padding: 0 2rem;
+}
+.px-4 {
+  padding: 0 3rem;
+}
+.px-5 {
+  padding: 0 4rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 2rem 0;
+}
+.py-4 {
+  padding: 3rem 0;
+}
+.py-5 {
+  padding: 4rem 0;
+}
+/***************
+root styles  
+***************/
+
+/***************
+root styles  
+***************/
+
+/***************
+root styles  
+***************/
+
+/***************
+root styles  
+***************/
+
+/***************
+root styles  
+***************/

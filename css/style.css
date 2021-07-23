@@ -1,0 +1,101 @@
+/***************
+root styles  
+***************/
+:root {
+  --primary-color: #035755;
+  --secondary-color: #4b4f51;
+  --brand-primary-color: #fb4c47;
+  --brand-secondary-color: #fa5652;
+  --light-color: rgba(250, 86, 82, 0.15);
+  --transition: all 0.2s ease-in;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/***************
+header  
+***************/
+header {
+  height: 100vh;
+}
+/* nav */
+header .navbar {
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.nav-logo img {
+  width: 70%;
+}
+
+.nav-link a {
+  padding: 0.5rem 1.25rem;
+  transition: var(--transition);
+  position: relative;
+}
+
+.nav-link a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  bottom: 0;
+  left: calc(50% - 2.5px);
+  background-color: #ffffff;
+  transition: var(--transition);
+}
+
+.nav-link:hover a {
+  color: var(--brand-primary-color);
+}
+
+.nav-link:hover a::before,
+.nav-special-link:hover a {
+  background-color: var(--brand-primary-color);
+  color: #ffffff;
+}
+
+.nav-special-link a {
+  padding: 0.5rem 1.5rem;
+  color: var(--brand-primary-color);
+  border: 1.9px solid var(--brand-primary-color);
+  border-radius: 2.75rem;
+  transition: var(--transition);
+}
+
+/* hero */
+.hero-info h1 {
+  line-height: 139%;
+}
+
+.hero-info p {
+  line-height: 170%;
+  width: 80%;
+}
+
+.hero-info a {
+  display: inline-block;
+  margin: 1rem 0;
+  transition: var(--transition);
+}
+
+.hero-info a:hover {
+  transform: scale(0.9);
+}
+/***************
+root styles  
+***************/
+
+/***************
+root styles  
+***************/
+
+/***************
+root styles  
+***************/
