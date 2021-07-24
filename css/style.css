@@ -81,14 +81,25 @@ header .navbar {
   animation: MoveFromLeftSide 0.4s ease-in;
 }
 
+.hero-info p {
+  width: 90%;
+}
+
 .hero-img {
   position: relative;
   animation: MoveFromRightSide 0.4s ease-in;
 }
 
-.hero-img img {
-  position: relative;
-  animation: Move 4s ease-in 0.4s infinite;
+.hero-img > svg {
+  width: 676px;
+  /* position: relative;
+  animation: Move 4s ease-in 0.4s infinite; */
+}
+
+#leaves_2 {
+  animation: shake 8s linear infinite alternate;
+  transform-origin: bottom;
+  transform-box: fill-box;
 }
 
 .hero-info a {
@@ -181,8 +192,10 @@ div > svg {
   transform-origin: bottom;
 }
 
-#eyes {
-  animation: blink 4s ease infinite;
+#eyes,
+#eye_1,
+#eye_2 {
+  animation: blink 4s linear infinite;
   transform-origin: center;
   transform-box: fill-box;
 }
@@ -247,6 +260,12 @@ footer .flex {
 /***************
 media query
 ***************/
+/* hero */
+@media screen and (max-width: 1140px) {
+  .hero-img > svg {
+    width: 100%;
+  }
+}
 /* mobile */
 @media screen and (max-width: 689px) {
   /* universal */
