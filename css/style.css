@@ -170,9 +170,21 @@ article .article-info h3 {
   letter-spacing: 1.9px;
 }
 
-.article-container img {
+.article-container img,
+div > svg {
   justify-self: flex-end;
   width: 400px;
+}
+
+#hand {
+  animation: move 4s ease infinite;
+  transform-origin: bottom;
+}
+
+#eyes {
+  animation: blink 4s ease infinite;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 /***************
 subscribe  
@@ -308,7 +320,8 @@ media query
   }
 
   /* awareness */
-  .article-container article:nth-of-type(n) img {
+  .article-container article:nth-of-type(n) img,
+  div > svg {
     order: 2;
     width: 80%;
     justify-self: center;
@@ -418,7 +431,8 @@ media query
   }
 
   /* awareness */
-  .article-container article:nth-of-type(n) img {
+  .article-container article:nth-of-type(n) img,
+  div > svg {
     order: 2;
     width: 50%;
     justify-self: center;
